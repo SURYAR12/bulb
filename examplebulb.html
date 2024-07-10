@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+        body {
+          background-image: url('https://png.pngtree.com/background/20220714/original/pngtree-yellow-abstract-bright-light-starlight-dots-wave-texture-curve-gradient-business-picture-image_1605142.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        </style>
+
+<center><img id="myImage" onclick="changeImage()" src="https://www.w3schools.com/js/pic_bulboff.gif" width="100" height="180"></center>
+
+<center><p style="color: rgb(7, 1, 1);"Click the light bulb to turn on/off the light.></p></center>
+<h1 style="color: rgb(4, 0, 255);">About Bulb</h1>
+<h3><p style="color: rgba(0, 0, 0, 0.849);">The incandescent light bulb turns electricity into light <br> sending the electric current through a thin wire called a filament.</p></h3>
+<br>
+<h1><p style="color: rgb(17, 0, 255);">Bulb Company</p></h1>
+<ul>
+    <h3 style="color: rgba(3, 3, 3, 0.849);"><li>Osram</li>
+    <li>Halonix</li>
+    <li>Orient Electric</li>
+    <li>Crompton</li>
+    <li>Surya Roshni Ltd.</li>
+    <li>Bajaj</li></h3>
+    </ul>
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+  } else {
+    image.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+  }
+}
+</script>
+</body>
+</html>
